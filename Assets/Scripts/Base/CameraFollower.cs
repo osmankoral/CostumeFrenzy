@@ -12,7 +12,7 @@ public class CameraFollower : MonoBehaviour
 
     private void Start()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        target = GameObject.FindGameObjectWithTag("Target").transform;
     }
 
     void LateUpdate() => CameraMove();

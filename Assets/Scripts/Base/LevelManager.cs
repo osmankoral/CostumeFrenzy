@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private GameObject LoadPanel;
 
+    GameController gameController;
     private GameObject CurrentLevel;
 
     private void Awake()
@@ -54,7 +55,10 @@ public class LevelManager : MonoBehaviour
     {
         GameManager.Instance.GameReady.Invoke();
         if (CurrentLevel) Destroy(CurrentLevel);
-        if (Levels[LevelIndex]) CurrentLevel = Instantiate(Levels[LevelIndex].LevelPrefab) as GameObject;
+        if (Levels[LevelIndex])
+        {
+            CurrentLevel = Instantiate(Levels[LevelIndex].LevelPrefab) as GameObject;
+        }
     }
 
     private void OnDisable()

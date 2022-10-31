@@ -5,14 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - Joystick
+  - Wall
+  - Target
+  - Models
+  - Costums
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Play
   - Water
   - UI
-  - 
+  - Ending
   - 
   - 
   - 
